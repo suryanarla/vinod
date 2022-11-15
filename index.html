@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imgdiv {
+        padding: 2%;
+        background-color: hsla(117, 61%, 61%, 0.32);
+        width: 10%;
+        margin-left: 1%;
+        text-align: center;
+      }
+
+      .maindiv {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .questions {
+        background-color: green;
+        width: 20%;
+        text-align: center;
+        height: 150px;
+        border-radius: 10px;
+        color: white;
+      }
+      .imgdiv img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .top-header {
+        background-color: hsla(117, 61%, 61%, 0.32);
+        padding: 1%;
+
+        border-radius: 10px;
+      }
+      .header-info {
+        color: rgba(24, 135, 245, 0.677);
+        font-style: sans-serif;
+      }
+      .top-right {
+        display: flex;
+        flex-wrap: wrap;
+        width: 78%;
+        text-align: center;
+      }
+      .parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .submit-button {
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .questions {
+          height: auto;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        .top-header {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+        .questions,
+        .top-right,
+        .maindiv {
+          width: 100%;
+        }
+        .imgdiv {
+          width: 26%;
+          margin-top: 2%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .questions {
+          height: auto;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        .top-header {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+        .questions,
+        .top-right,
+        .maindiv {
+          width: 100%;
+        }
+        .imgdiv {
+          width: 40%;
+          margin-top: 2%;
+        }
+
+        .submit-button,
+        input[type="button"] {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .questions {
+          height: auto;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        .top-header {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+        .questions,
+        .top-right,
+        .maindiv {
+          width: 100%;
+        }
+        .imgdiv {
+          width: 48%;
+          margin-top: 2%;
+        }
+
+        .submit-button,
+        input[type="button"] {
+          width: 100%;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="questions">
+        <p>Question 01/02</p>
+      </div>
+      <div class="top-right">
+        <div class="top-header">
+          <p>
+            Below are three options on how to respond to the scenario above
+            Please choose the response that resonates most with you and click
+            Next to proceed
+          </p>
+        </div>
+        <h4 class="header-info">
+          <i>
+            Below are three options on how to respond to the scenario above
+            Please choose the response that resonates most with you and click
+            <b>Next</b> to proceed
+          </i>
+        </h4>
+        <div class="maindiv">
+          <div class="imgdiv">
+            <img src="/images/Complex_eLearning_322W_322H.png" /><br />
+            <input type="checkbox" />
+          </div>
+          <div class="imgdiv">
+            <img src="/images/ELearning.png" /><br />
+            <input type="checkbox" />
+          </div>
+          <div class="imgdiv">
+            <img
+              src="/images/iron-man-2560x2494-infinity-gauntlet-hd-16412.jpg"
+            /><br />
+            <input type="checkbox" />
+          </div>
+          <div class="imgdiv">
+            <img
+              src="/images/Medium_Complexity_E_Learning_322W_322H.png"
+            /><br />
+            <input type="checkbox" />
+          </div>
+        </div>
+        <div class="submit-button">
+          <input type="button" value="submit" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
